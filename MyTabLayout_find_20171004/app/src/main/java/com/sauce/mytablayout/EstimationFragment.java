@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -22,7 +23,9 @@ public class EstimationFragment extends Fragment{
 
     private ImageView logo;
     private TextView name;
+    private SeekBar estimationBar;
     private HashMap<String, Integer> logos;  //클럽로고들을 저장하는 해시맵
+    private int inputScore;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -53,8 +56,29 @@ public class EstimationFragment extends Fragment{
         Log.d("R.drawable val", (String.valueOf(R.drawable.cocoon_logo)));
         logo = (ImageView) findViewById(R.id.logo);
         name = (TextView) findViewById(R.id.name_text);
+        estimationBar = (SeekBar) findViewById(R.id.estimationBar);
         logo.setImageResource(logos.get("Papa"));  //인텐트로 받은 클럽 이름에 따라 logos 해시테이블에서 값을 가져옴.
         name.setText("NameText");
+        estimationBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                inputScore = seekBar.getProgress();
+                Log.d("seekbar onstop",String.valueOf(inputScore));
+            }
+
+        });
+
+
 
     }
 

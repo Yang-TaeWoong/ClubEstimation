@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 public class InformationFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_estimation, container, false);
+        return inflater.inflate(R.layout.fragment_information, container, false);
     }
 
 }

@@ -7,6 +7,7 @@
     tools:context="com.sauce.mytablayout.SplashActivity">
 
     <ImageView
+        android:src="@drawable/splashscreen"
         android:id="@+id/imageView"
         android:layout_width="424dp"
         android:layout_height="match_parent"

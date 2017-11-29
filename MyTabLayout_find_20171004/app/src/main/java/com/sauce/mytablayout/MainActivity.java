@@ -3,6 +3,7 @@ package com.sauce.mytablayout;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -31,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Initializing the TabLayout
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab One"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab Two"));
-        tabLayout.addTab(tabLayout.newTab().setText("Find"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.home_icon));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.rank_icon));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.search_icon));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         // Initializing ViewPager

@@ -8,6 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SplashActivity">
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashActivity"
@@ -19,6 +21,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".EstimationActivity"
+            android:label="@string/title_activity_estimation"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
+
             android:name=".StatusActivity"
             android:theme="@style/NoTitle" />
         <activity

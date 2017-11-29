@@ -79,6 +79,7 @@
             tools:layout_editor_absoluteY="39dp" />
 
         <ImageView
+            android:id="@+id/score_bar"
             android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

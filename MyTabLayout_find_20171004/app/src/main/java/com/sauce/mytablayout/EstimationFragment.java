@@ -13,7 +13,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Arduino on 2017-11-29.
@@ -24,8 +23,11 @@ public class EstimationFragment extends Fragment{
     private ImageView logo;
     private TextView name;
     private SeekBar estimationBar;
+    private ImageView scBar;
     private HashMap<String, Integer> logos;  //클럽로고들을 저장하는 해시맵
     private int inputScore;
+    private int scoreBars[] = {R.drawable.gradientbar0, R.drawable.gradientbar1, R.drawable.gradientbar2,
+                                     R.drawable.gradientbar3, R.drawable.gradientbar4, R.drawable.gradientbar5};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -54,11 +56,16 @@ public class EstimationFragment extends Fragment{
         super.onActivityCreated(savedInstanceState);
         Log.d("HashMap val", logos.get("Cocoon").toString());
         Log.d("R.drawable val", (String.valueOf(R.drawable.cocoon_logo)));
+        scBar = (ImageView) findViewById(R.id.score_bar);
         logo = (ImageView) findViewById(R.id.logo);
         name = (TextView) findViewById(R.id.name_text);
         estimationBar = (SeekBar) findViewById(R.id.estimationBar);
         logo.setImageResource(logos.get("Papa"));  //인텐트로 받은 클럽 이름에 따라 logos 해시테이블에서 값을 가져옴.
         name.setText("NameText");
+
+        //서버에서 가져온 현제 점수를 바에 적용.
+        scBar.setImageResource(scoreBars[3]);
+
         estimationBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -74,6 +81,9 @@ public class EstimationFragment extends Fragment{
             public void onStopTrackingTouch(SeekBar seekBar) {
                 inputScore = seekBar.getProgress();
                 Log.d("seekbar onstop",String.valueOf(inputScore));
+
+                //서버에 측정값을 올리고 계산해서 다시 가져온 값으로  스코어이미지를 변경.
+                scBar.setImageResource(scoreBars[inputScore]);
             }
 
         });

@@ -8,11 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".SplashActivity">
-        <activity android:name=".MainActivity" />
+
+        <activity android:name=".SplashActivity"/>
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,19 +20,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EstimationActivity"
-            android:label="@string/title_activity_estimation"
-            android:theme="@style/AppTheme"></activity>
-    </application>
-
-</manifest>
-
             android:name=".StatusActivity"
             android:theme="@style/NoTitle" />
         <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
+            android:name=".EstimationActivity"
+            android:label="@string/title_activity_estimation"
             android:theme="@style/AppTheme"></activity>
+
     </application>
 
 </manifest>
+
+

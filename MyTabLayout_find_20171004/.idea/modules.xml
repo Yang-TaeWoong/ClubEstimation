@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyTabLayout_find_20171004.iml" filepath="$PROJECT_DIR$/MyTabLayout_find_20171004.iml" />
+      <module fileurl="file://C:\Users\albadw0428\Documents\ClubEstimation\MyTabLayout_find_20171004\MyTabLayout_find_20171004.iml" filepath="C:\Users\albadw0428\Documents\ClubEstimation\MyTabLayout_find_20171004\MyTabLayout_find_20171004.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\albadw0428\Documents\ClubEstimation\MyTabLayout_find_20171004\app\app.iml" filepath="C:\Users\albadw0428\Documents\ClubEstimation\MyTabLayout_find_20171004\app\app.iml" />
     </modules>
   </component>
 </project>

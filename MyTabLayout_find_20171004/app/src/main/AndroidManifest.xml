@@ -10,21 +10,16 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".SplashActivity"
-            android:theme="@style/NoTitle">
+            android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EstimationActivity"/>
         <activity
-            android:name=".StatusActivity"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".StatusActivity" />
     </application>
 
 </manifest>

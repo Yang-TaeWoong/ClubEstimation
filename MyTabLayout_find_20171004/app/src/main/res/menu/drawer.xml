@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_shareWithFriend"
+            android:checked="true"
+            android:icon="@drawable/verygood"
+            android:title="@string/nav_item_kakao" />
+        <item
+            android:id="@+id/navigation_item_favorites"
+            android:icon="@drawable/verygood"
+            android:title="@string/nav_item_favorites" />
+        <item
+            android:id="@+id/navigation_item_QA"
+            android:icon="@drawable/verygood"
+            android:title="@string/nav_item_QA" />
+        <item
+            android:id="@+id/navigation_item_settings"
+            android:icon="@drawable/verygood"
+            android:title="@string/nav_item_settings" />
+    </group>
+</menu>

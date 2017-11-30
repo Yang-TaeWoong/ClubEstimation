@@ -1,8 +1,12 @@
-package com.sauce.mytablayout;
+package com.sauce.mytablayout.MainFragment;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.sauce.mytablayout.Estimation.TabFragment3;
+import com.sauce.mytablayout.RankingFragment.TabFragment2;
+import com.sauce.mytablayout.ListFragment.TabFragment1;
 
 /**
  * Created by Junyoung on 2016-06-23.

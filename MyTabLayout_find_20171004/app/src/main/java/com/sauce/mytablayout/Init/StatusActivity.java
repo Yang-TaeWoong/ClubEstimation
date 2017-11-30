@@ -1,4 +1,4 @@
-package com.sauce.mytablayout;
+package com.sauce.mytablayout.Init;
 
 import android.content.Intent;
 import android.support.v4.view.GestureDetectorCompat;
@@ -9,11 +9,14 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.sauce.mytablayout.MainFragment.MainActivity;
+import com.sauce.mytablayout.R;
+
 public class StatusActivity extends AppCompatActivity {
 
     //TODO : 데이터 베이스에서 값 받아오는것을 int num이라고 가정, 파이어베이스 서버에서 값을 가져오는것으로 한다.
     double num=4.3;
-    int arr[]={0,R.drawable.verybad,R.drawable.bad,R.drawable.notbad,R.drawable.good,R.drawable.verygood};
+    int arr[]={0, R.drawable.verybad,R.drawable.bad,R.drawable.notbad,R.drawable.good,R.drawable.verygood};
     String txt[]={"","very bad","bad","not bad","good","very good"};
     private ImageView imageView;
     private TextView textView;

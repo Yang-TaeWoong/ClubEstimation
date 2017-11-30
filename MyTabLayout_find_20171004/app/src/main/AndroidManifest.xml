@@ -8,18 +8,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainFragment.MainActivity" />
         <activity
-            android:name=".SplashActivity">
+            android:name=".Init.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EstimationActivity"/>
+        <activity android:name=".Estimation.EstimationActivity"/>
         <activity
-            android:name=".StatusActivity" />
+            android:name=".Init.StatusActivity" />
     </application>
-
 </manifest>

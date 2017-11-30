@@ -1,9 +1,11 @@
-package com.sauce.mytablayout;
+package com.sauce.mytablayout.Init;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.sauce.mytablayout.R;
 
 public class SplashActivity extends AppCompatActivity {
 

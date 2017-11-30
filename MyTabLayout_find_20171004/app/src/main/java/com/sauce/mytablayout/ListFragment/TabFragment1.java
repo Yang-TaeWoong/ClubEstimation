@@ -1,4 +1,4 @@
-package com.sauce.mytablayout;
+package com.sauce.mytablayout.ListFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Map;
+import com.sauce.mytablayout.Estimation.EstimationActivity;
+import com.sauce.mytablayout.R;
 
 /**
  * Created by Junyoung on 2016-06-23.
@@ -23,7 +24,7 @@ public class TabFragment1 extends Fragment {
     String clubName="club name";
 
     //TODO : clubName을 listView에서 받아와야함
-    int arr[] = {0,R.drawable.verybad, R.drawable.bad, R.drawable.notbad, R.drawable.good, R.drawable.verygood};
+    int arr[] = {0, R.drawable.verybad, R.drawable.bad, R.drawable.notbad, R.drawable.good, R.drawable.verygood};
     String st[] = {"오늘은 가지마~", "굳이 오늘가야해?", "심심하면 가보는것도?", "나름 괜차나", "오늘이 각이다"};
     ImageView image;
     TextView text;
